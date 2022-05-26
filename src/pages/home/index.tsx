@@ -55,7 +55,7 @@ export default function Home(props: {
           <H2><em>Professional Experiences and certifications . . .</em></H2>
         </AreaFolders>
         <AreaExp>
-          {props.contentExp.map((item, index) => (
+          {props.contentExp?.map((item, index) => (
             <Ul key={index}>
               <Li>
                 {item.title} <br></br><br></br>
@@ -72,7 +72,7 @@ export default function Home(props: {
           <H2><em>Hard Skills . . .</em></H2>
         </AreaFolders>
         <AreaTec>
-          {props.contentImgTech.map((item, index) => (
+          {props.contentImgTech?.map((item, index) => (
             <ImgTec key={index} src={item.url} />
           ))}
           <ImgTs src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" />
@@ -84,7 +84,7 @@ export default function Home(props: {
         <AreaFolders >
           <H2><em>My Recent Projects . . .</em></H2>
           <AreaProject>
-            {props.contentProject.map((item, index) => (
+            {props.contentProject?.map((item, index) => (
               <Project1 key={index}>
                 <H3>***{' '}{item.project}{' '}***</H3>
                 <SeePt>
