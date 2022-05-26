@@ -113,6 +113,6 @@ export default function Home(props: {
         </AreaBtnFooter>
       </Section>
     </DivTotal >
-  );
-};
+  )
+}
 
