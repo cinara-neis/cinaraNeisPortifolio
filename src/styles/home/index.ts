@@ -21,6 +21,9 @@ margin-top:20px;
 width:12%;
 margin-bottom:20px;
 border-radius:80px;
+@media(min-width:390px) and (max-width:844px){
+  width:15%;
+}
 `;
 
 export const Hey2 = styled.text`
